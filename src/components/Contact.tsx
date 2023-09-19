@@ -36,7 +36,7 @@ const Contact: React.FunctionComponent<ContactProps> = (props) => {
       ref={ref}
     >
       <SectionHeading title="Contact me" />
-      <p className="text-gray-700 -mt-3">
+      <p className="text-gray-700 -mt-3 dark:text-white/80">
         Please contact me directly at{" "}
         <a className="underline cursor-pointer" href="mailto:example@gmail.com">
           example@gmail.com
@@ -55,19 +55,19 @@ const Contact: React.FunctionComponent<ContactProps> = (props) => {
 
           toast.success("Email sent successfully");
         }}
-        className="mt-10 flex flex-col"
+        className="mt-10 flex flex-col dark:text-black"
       >
         <input
           name="senderEmail"
           type="email"
-          className="h-14 rounded-lg borderBlack p-2  "
+          className="h-14 rounded-lg borderBlack p-2 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none  "
           placeholder="Your Email"
           required
           maxLength={500}
         />
         <textarea
           name="message"
-          className="h-52 my-3 borderBlack p-2"
+          className="h-52 my-3  rounded-lg borderBlack p-2 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
           placeholder="Your Message"
           required
           maxLength={5000}

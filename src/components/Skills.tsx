@@ -35,7 +35,7 @@ const Skills: React.FunctionComponent<SkillsProps> = (props) => {
         {skillsData.map((skill, index) => (
           <motion.li
             key={index}
-            className="bg-white border-black/[0.1] rounded-xl px-5 py-3 hover:bg-gray-100 transition-colors cursor-pointer"
+            className="bg-white border-black/[0.1] rounded-xl px-5 py-3 hover:bg-gray-100 transition-colors cursor-pointer dark:bg-white/10 dark:text-white/80"
             variants={fadeInAnimationVariants}
             initial="initial"
             whileInView="animate"

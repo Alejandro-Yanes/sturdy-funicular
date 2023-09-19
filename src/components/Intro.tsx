@@ -85,7 +85,7 @@ const Intro: React.FunctionComponent<IntroProps> = (props) => {
           <BsArrowRight className="opacity-70 group-hover:translate-x-2 transition" />
         </Link>
         <a
-          className="bg-white text-black px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110  active:scale-105 transition group cursor-pointer borderBlack "
+          className="bg-white text-black px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110  active:scale-105 transition group cursor-pointer borderBlack dark:bg-white/10 dark:text-white "
           href="/CV.pdf"
           download
         >
@@ -94,7 +94,7 @@ const Intro: React.FunctionComponent<IntroProps> = (props) => {
         </a>
         <a
           href="https://pt.linkedin.com/"
-          className="bg-white text-gray-700 px-7 py-3 flex items-center gap-2 rounded-full hover:text-blue-500 focus:scale-110 hover:scale-110  active:scale-105 transition group cursor-pointer borderBlack"
+          className="bg-white text-gray-700 px-7 py-3 flex items-center gap-2 rounded-full hover:text-blue-500 focus:scale-110 hover:scale-110  active:scale-105 transition group cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
           target="_blank"
         >
           <BsLinkedin />
@@ -102,7 +102,7 @@ const Intro: React.FunctionComponent<IntroProps> = (props) => {
         <a
           href="https://github.com/"
           target="_blank"
-          className="bg-white text-gray-700 px-7 py-3 flex items-center gap-2 rounded-full hover:text-gray-950 focus:scale-[1.15] hover:scale-[1.15]  active:scale-105 transition group cursor-pointer borderBlack"
+          className="bg-white text-gray-700 px-7 py-3 flex items-center gap-2 rounded-full hover:text-gray-950 focus:scale-[1.15] hover:scale-[1.15]  active:scale-105 transition group cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
         >
           <BsGithub />
         </a>

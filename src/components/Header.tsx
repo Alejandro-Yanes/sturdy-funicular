@@ -15,7 +15,7 @@ const Header: React.FunctionComponent<HeaderProps> = (props) => {
   return (
     <header className="z-[999] relative">
       <motion.div
-        className="fixed top-0 left-1/2  h-[4.5rem] w-full rounded-none border border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem] sm:w-[36rem] sm:rounded-full"
+        className="fixed top-0 left-1/2  h-[4.5rem] w-full rounded-none border border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem] sm:w-[36rem] sm:rounded-full dark:bg-gray-950 dark:border-black/40 dark:bg-opacity-75 "
         initial={{ opacity: 0, y: -100, x: "-50%" }}
         animate={{ opacity: 1, y: 0, x: "-50%" }}
       ></motion.div>
@@ -27,7 +27,8 @@ const Header: React.FunctionComponent<HeaderProps> = (props) => {
               className={clsx(
                 "h-3/4 flex items-center justify-center relative",
                 {
-                  "text-gray-950": activeSection === link.name,
+                  "text-gray-950 dark:text-gray-200":
+                    activeSection === link.name,
                 }
               )}
               initial={{ opacity: 0, y: -100 }}
@@ -39,13 +40,13 @@ const Header: React.FunctionComponent<HeaderProps> = (props) => {
             >
               <Link
                 href={link.hash}
-                className="flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition"
+                className="flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition dark:text-gray-500 dark:hover:text-gray-300"
               >
                 {link.name}
 
                 {link.name === activeSection && (
                   <motion.span
-                    className="bg-gray-100 rounded-full absolute inset-0 -z-10"
+                    className="bg-gray-100 rounded-full absolute inset-0 -z-10 dark:bg-gray-800"
                     layoutId="activeSection"
                     transition={{ type: "spring", stiffness: 380, damping: 30 }}
                   ></motion.span>
